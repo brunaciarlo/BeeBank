@@ -1,0 +1,107 @@
+.text-welcome{
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+#abelha{
+    height: 700px;
+}
+
+.modal{
+    color: #161E23;
+}
+
+.button-index{
+    border-radius: 10px;
+    border: none;
+    width: 356px;
+    height: 124px;
+    background-color: #f9d552;
+    color: #161E23;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.button-index:hover{
+    border: 2px solid #161E23;
+    background-color: #40bfa0;
+}
+
+#buttonVoltar{
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 60px;
+    background-color: #f9d552;
+    color: #161E23;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.button-remover{
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    height: 30px;
+    background-color: #800505;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.buttonTransferir{
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    height: 30px;
+    background-color: #40bfa0;
+    color: #161E23;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.buttonOutros{
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    background-color: #bebcbc;
+    color: #161E23;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.button-cadastar-chave{
+    border-radius: 5px;
+    border: none;
+    width: 180px;
+    height: 30px;
+    background-color: #40bfa0;
+    color: #161e23;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#button-modal{
+    border-radius: 10px;
+    background-color: #40bfa0;
+    color:#ffffff;  
+}
+
+#button-modal:hover{
+    border-radius: 10px;
+    background-color: #015958;
+    color:#ffffff;  
+}
+
+#button-cancel{
+    border-radius: 10px;
+    background-color: #bebcbc;
+}
+
+#button-cancel:hover{
+    border-radius: 10px;
+    background-color: #506266;
+    color: #ffffff;
+}
