@@ -30,10 +30,31 @@
       </div>
     </nav>
   </header>
+  <?php
+    $serverName = "localhost";
+    $database = "bee_bank";
+    $userName = "root";
+    $password = "";
+      
+    $conn= mysqli_connect($serverName,$userName,    
+    $password, $database);
+      
+    if(!$conn){
+      die("Erro na conexão do DB " 
+      . mysqli_connect_error());
+    }
+      
+    $sqlSaldo = "SELECT * FROM extrato ORDER BY id DESC LIMIT 1";
+    $result = $conn->query($sqlSaldo);
+    $row = $result->fetch_assoc();
+    $saldo = $row['saldo'];
+  ?>
   <main class="align-middle align-middle mt-5">
     <div class="col d-flex justify-content-center my-5 flex-column ml-5">
       <div class="container">
-        <h2>Pix</h2> <br><br>
+        <h2>Pix</h2>
+        <h2>Saldo $<?php echo $saldo ?></h2>
+        <br><br>
         <div class="row">
           <div class="col">
             <a href="listagemChavesPix.php"><button class="button-index"><i class="fa-solid fa-key"></i> Chaves Pix</button></a>

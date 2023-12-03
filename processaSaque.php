@@ -18,10 +18,10 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-2">
             <i class="bi bi-house-door-fill"></i>
             <li class="nav-item">
-              <a href="./moduloPix.html" style="color: #161E23;"><i class="m-2 me-3 align-middle fa-brands fa-pix fa-xl"></i></a>
+              <a href="./moduloPix.php" style="color: #161E23;"><i class="m-2 me-3 align-middle fa-brands fa-pix fa-xl"></i></a>
             </li>
             <li class="nav-item">
-              <a href="./moduloConta.html" style="color: #161E23;"><i class="m-2 align-middle fa-solid fa-user fa-xl fa-xl"></i></a>
+              <a href="./moduloConta.php" style="color: #161E23;"><i class="m-2 align-middle fa-solid fa-user fa-xl fa-xl"></i></a>
             </li>
           </ul>
         </div>
@@ -65,7 +65,7 @@ if($saldo >= $valorSaque){
 }
 
 if(mysqli_query($conn,$sql))    {
-    header('Location: moduloConta.html');
+    header('Location: moduloConta.php');
 }else{
     echo "Erro ao gravar transação";
 }
