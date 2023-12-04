@@ -26,7 +26,8 @@ $sql = "insert into extrato (tipo_transferencia, valor_transferencia, saldo) val
 
 
 if(mysqli_query($conn,$sql))    {
-    header('Location: moduloConta.php');
+    echo "<script> alert('Depósito concluído com sucesso!');";
+    echo "window.location.href = 'moduloConta.php';</script>";
 }else{
     echo "Erro ao gravar transação";
 }
