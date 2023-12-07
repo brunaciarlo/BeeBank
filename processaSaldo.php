@@ -55,7 +55,12 @@
         echo "<tbody class='table-group-divider'>" ;
         while($linha = mysqli_fetch_array($tabela)){       
             echo "<td>";
-                echo $linha["tipo_transferencia"] ;
+              if($linha["tipo_transferencia"] == "Deposito"){
+                echo "<i class='fa-solid fa-arrow-down' style='color: #038C3E;'></i>  ";
+              } else if($linha["tipo_transferencia"] == "Saque" || $linha["tipo_transferencia"] == "Pix"){
+                echo "<i class='fa-solid fa-arrow-up' style='color: #9C0304;'></i>  ";
+              }
+              echo $linha["tipo_transferencia"] ;
             echo "</td>";
             
             echo "<td>";
