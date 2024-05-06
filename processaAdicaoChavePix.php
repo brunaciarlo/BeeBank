@@ -32,7 +32,7 @@ if($tipoChave == "1"){
         echo "window.location.href = 'listagemChavesPix.php';</script>";
         exit;
     } else{
-        if($chave != ""){
+        if($chave != "" && strlen($chave) == 11){
             $sql = "insert into chaves_pix (tipo_chave, chave_pix) values ('Telefone'," . $chave .")";
 
             if(mysqli_query($conn,$sql))    {
@@ -42,7 +42,7 @@ if($tipoChave == "1"){
             }
             mysqli_close($conn);
         }else{
-            echo "<script> alert('Chave não pode ser vazio');";
+            echo "<script> alert('Chave pix inválida');";
             echo "window.location.href = 'listagemChavesPix.php';</script>";
             exit;
         }
@@ -59,7 +59,7 @@ if($tipoChave == "2"){
         echo "window.location.href = 'listagemChavesPix.php';</script>";
         exit;
     } else{
-        if($chave != ""){
+        if($chave != "" && strlen($chave) == 11){
             $sql = "insert into chaves_pix (tipo_chave, chave_pix) values ('CPF'," . $chave .")";
 
             if(mysqli_query($conn,$sql))    {
@@ -69,7 +69,7 @@ if($tipoChave == "2"){
             }
             mysqli_close($conn);
         } else{
-            echo "<script> alert('Chave não pode ser vazio');";
+            echo "<script> alert('Chave pix inválida');";
             echo "window.location.href = 'listagemChavesPix.php';</script>";
             exit;
         }
