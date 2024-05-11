@@ -73,7 +73,7 @@ CREATE TABLE `favoritos` (
 
 INSERT INTO `favoritos` (`id`, `nome`, `chave_pix`) VALUES
 (1, 'Maria Julia', '21 998877665'),
-(2, 'Pedro Antônio', '12378945600');
+(2, 'Pedro Antonio', '12378945600');
 
 --
 -- Índices para tabelas despejadas

@@ -19,6 +19,11 @@ if($chavePix == ""){
   echo "window.location.href = 'listagemFavTransferencia.php';</script>";
   exit;
 }
+if(strlen($chavePix) != 11){
+  echo "<script> alert('Chave inválida!');";
+  echo "window.location.href = 'listagemFavTransferencia.php';</script>";
+  exit;
+}
 if($valorTransferencia == ""){
   echo "<script> alert('Valor não pode ser vazio');";
   echo "window.location.href = 'listagemFavTransferencia.php';</script>";

@@ -13,6 +13,11 @@ if($chaveFavorito == ""){
   echo "window.location.href = 'listagemFavoritosPix.php';</script>";
   exit;
 }
+if(strlen($chaveFavorito) != 11){
+  echo "<script> alert('Chave inválida!');";
+  echo "window.location.href = 'listagemFavoritosPix.php';</script>";
+  exit;
+}
 
 $serverName = "localhost";
 $database = "bee_bank";
