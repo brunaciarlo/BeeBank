@@ -120,11 +120,11 @@ This project is an apliccation with the purpose of front-end development study f
 
 Due to a lack of resources to host a PHP project with a database, it is necessary to download the project and run it on your machine in order to view it in operation. To do this, follow the steps below:
 
-<h3>Pré-requisitos</h3>
+<h3>Prerequisites</h3>
 
 - [XAMPP](https://www.apachefriends.org/pt_br/index.html) (or an alternative environment to run PHP and SQL)
 
-<h3>Clonando</h3>
+<h3>Cloning</h3>
 
 How to clone
 
